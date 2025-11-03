@@ -339,8 +339,12 @@ td a:hover {
         </div>
     </div>
 
+    <script>
+        // Get API key from backend or environment
+        const GOOGLE_MAPS_API_KEY = "{{ google_maps_api_key }}"; // Flask template variable
+    </script>
     <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAf_ZJQORngO5oaDc2fT_TgAFUapu04hXI&libraries=places&callback=initMap"
+        src="https://maps.googleapis.com/maps/api/js?key={{ google_maps_api_key }}&libraries=places&callback=initMap"
         async defer></script>
     <script>
         let map, service, autocomplete;

@@ -318,7 +318,8 @@ def get_messages():
 # Location page route
 @app.route("/location", methods=["GET"])
 def location():
-    return render_template("location.html")
+    google_maps_api_key = os.getenv("GOOGLE_MAPS_API_KEY", "YOUR_GOOGLE_MAPS_API_KEY_HERE")
+    return render_template("location.html", google_maps_api_key=google_maps_api_key)
 
 # SMS route
 @app.route("/send_sms", methods=["POST"])

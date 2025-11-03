@@ -15,7 +15,8 @@ app.use(express.json()); // ✅ Use express.json() for request parsing
 app.use(bodyParser.json());
 
 // Connect to MongoDB
-mongoose.connect("mongodb+srv://Ridhi:Yash2106@cluster0.iyssd.mongodb.net/G12")
+const MONGODB_URI = process.env.MONGODB_URI || "YOUR_MONGODB_URI_HERE";
+mongoose.connect(MONGODB_URI)
   .then(() => console.log("✅ MongoDB Connected"))
   .catch(err => console.log("❌ MongoDB Connection Error:", err));
 
