@@ -1,0 +1,152 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+*.manifest
+*.spec
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Virtual Environment
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+
+# Flask
+instance/
+.webassets-cache
+.env
+.flaskenv
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+package-lock.json
+
+# Logs
+logs/
+*.log
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Environment Variables
+.env
+.env.local
+.env.example
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE and Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Machine Learning Models (IMPORTANT!)
+# Uncomment these if your model files are too large for GitHub
+# *.h5
+*.pkl
+*.pickle
+*.joblib
+# *.model
+*.pth
+*.onnx
+*.pb
+# model_checkpoint.h5
+checkpoints/
+saved_models/
+# models/*.h5
+
+# Data files
+# data/
+# dataset/
+# *.csv
+# *.xlsx
+
+# Uploads and Static files
+static/uploads/*
+!static/uploads/.gitkeep
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Testing
+.coverage
+.pytest_cache/
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+.hypothesis/
+
+# Build files
+*.pyc
+*.pyo
+dist/
+build/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Credentials and Secrets
+config.json
+secrets.json
+credentials.json
+*.pem
+*.key
+*.cert
+
+# MongoDB
+dump/
+mongodb_data/
+
+# PM2
+.pm2/
+ecosystem.config.js.backup
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*.old
